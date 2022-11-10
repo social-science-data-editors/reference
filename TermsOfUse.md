@@ -3,7 +3,7 @@ title: Table test
 layout: withtable
 ---
 
-<table>
+<table class="display">
   {% for row in site.data.test %}
     {% if forloop.first %}
     <thead>
