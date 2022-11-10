@@ -4,7 +4,7 @@ layout: withtable
 ---
 
 <table class="display">
-  {% for row in site.data.test %}
+  {% for row in site.data.termsofuse %}
     {% if forloop.first %}
     <thead>
     <tr>
