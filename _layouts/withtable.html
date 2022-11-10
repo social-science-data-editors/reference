@@ -12,10 +12,10 @@
     <![endif]-->
     <script src="{{ "/assets/js/mermaid.min.js" |  relative_url }}"></script>
     <script>mermaid.initialize({ startOnLoad: true });</script>
-    <!-- needed for tables-->
-    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
-    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
-    <script src="https://cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>  
+  
+{% include header.html %}
+{% include top-table.html %}
+
   </head>
   <body>
     <div class="wrapper">
@@ -44,34 +44,14 @@
          
       </header>
       <section>
-         {% if page.title %}
-         <h2>{{ page.title }}</h2> 
-         {% endif %}
-        
-      
-        {%if page.doi %}
-        <p><a href="https://doi.org/{{ page.doi }}"><img src="https://zenodo.org/badge/DOI/{{ page.doi }}.svg" alt="DOI" /></a></p>
-      {% endif %}
+
+      {% include title-doi.html %}
       
       {{ content }}
 
       </section>
       <footer>
-        <p><em>Authors:</em> 
-          {% if page.contributors %}
-            {% for c in page.contributors %}
-              {{ c }}{% if forloop.last == false %},{% endif %}
-            {% endfor %}
-            {% else %}
-            {{ site.github.owner_name }}
-            {% endif %}
-          </p>
-          {% if site.github.is_project_page %}
-          <p>This project is maintained at <a href="{{ site.github.repository_url }}">{{ site.github.repository_nwo }}</a></p>
-        {% endif %}
-        <p><em><a href="/Disclaimer.html">Disclaimer</a></em> 
-        </p>
-        <!-- <p><small>Hosted on GitHub Pages &mdash; Theme by <a href="https://github.com/orderedlist">orderedlist</a></small></p>-->
+        {% include footer.html %}
       </footer>
     </div>
     <script src="{{ "/assets/js/scale.fix.js" | relative_url }}"></script>
@@ -86,7 +66,8 @@
     </script>
     {% endif %}
     <script>
-      $('table.display').DataTable()
+      createCitation();
     </script>
+    {% include bottom-table.html %}
   </body>
 </html>
