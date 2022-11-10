@@ -1,5 +1,5 @@
 ---
-title: Table test
+title: Various terms of use
 layout: withtable
 ---
 
