@@ -47,11 +47,7 @@
          {% if page.title %}
          <h2>{{ page.title }}</h2> 
          {% endif %}
-        <div>
-        On this page: 
-        {% include toc.html html=content sanitize=true class="inline_toc" id="my_toc" h_min=3 h_max=3 %}
-        </div>
-
+        
       
         {%if page.doi %}
         <p><a href="https://doi.org/{{ page.doi }}"><img src="https://zenodo.org/badge/DOI/{{ page.doi }}.svg" alt="DOI" /></a></p>
