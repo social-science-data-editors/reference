@@ -1,0 +1,35 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: >-
+  Reference information for social science replication packages
+message: The information provided here is licensed under a CC-BY-NC license. Usage by commercial entities is allowed, reselling it is not. 
+type: publication
+authors:
+  - given-names: Lars
+    family-names: Vilhuber
+    email: lars.vilhuber@cornell.edu
+    affiliation: Cornell University
+    orcid: 'https://orcid.org/0000-0001-5733-8932'
+  - given-names: Marie
+    family-names: Connolly
+    affiliation: Université du Québec à Montréal
+    orcid: 'https://orcid.org/0000-0002-5471-3984'
+  - given-names: Miklós
+    family-names: Koren
+    affiliation: Central European University
+    orcid: 'https://orcid.org/0000-0003-4495-7560'
+  - given-names: Joan
+    family-names: Llull
+    affiliation: Barcelona Graduate School of Economics
+    orcid: 'https://orcid.org/0000-0002-5250-242X'
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.xxxxx
+    description: DOI for all versions
+repository-code: >-
+  https://github.com/social-science-data-editors/reference/
+abstract: >-
+ Reference information for social science replication packages
+license: CC-BY-NC-4.0

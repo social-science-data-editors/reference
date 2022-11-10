@@ -1,5 +1,6 @@
 ---
 title: Table test
+layout: withtable
 ---
 
 <table>

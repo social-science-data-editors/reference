@@ -1,0 +1,5 @@
+theme: jekyll-theme-minimal
+title: Reference information for various topics.
+description: These pages contains useful information for any replication package, such as where to find Terms of Use, whether data can be distributed, etc.
+logo: https://social-science-data-editors.github.io/assets/ssde-logo.jpeg
+show_downloads: false
