@@ -3,7 +3,7 @@ title: Table test
 ---
 
 <table>
-  {% for row in site.data.authors %}
+  {% for row in site.data.test %}
     {% if forloop.first %}
     <tr>
       {% for pair in row %}
