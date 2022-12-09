@@ -1,4 +1,6 @@
-# Reference 
+---
+title: Introduction
+---
 
 The pages in this section of the site collate various useful pieces of information, such as terms of use for various data, repositories that may not be known as "trusted" but which are robust enought to satisfy data editors' needs, and others.
 
