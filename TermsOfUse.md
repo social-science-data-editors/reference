@@ -13,7 +13,11 @@ Each entry in the database will list a data provider, an extract from the terms 
     <thead>
     <tr>
       {% for cell in row %}
+      {% if forloop.last %}
+        {% continue %}
+      {% else %}
         <th>{{ cell[0] }}</th>
+      {% endif %}
       {% endfor %}
     </tr>
     </thead>
@@ -27,12 +31,12 @@ Each entry in the database will list a data provider, an extract from the terms 
   <!-- manually constructing table -->
   <!-- Data provider,Terms of Use,Source URL,Distributable,Further info,Contributed,Lastdate -->
   <tr>
-    <td> {{ row[1] }} </td>
-    <td> {{ row[2] }} </td>
-    <td> <a href="{{ row[3] }}" alt="Link to Terms of Use">{{ row[3] }}</a></td>
-    <td> {{ row[4] }} </td>
-    <td> {{ row[5] }} </td>
-    <td class="contributor">{{ row[6] }}<br/>{{ row[7] }}</td>
+    <td> {{ row["Data provider"] }} </td>
+    <td> {{ row["Terms of Use"] }} </td>
+    <td> <a href="{{ row["Source URL"] }}" alt="Link to Terms of Use">{{ row["Source URL"] }}</a></td>
+    <td> {{ row["Distributable"] }} </td>
+    <td> {{ row["Further info"] }} </td>
+    <td class="contributor">{{ row["Contributed"] }}<br/>{{ row["Lastdate"] }}</td>
   </tr>
   {% endfor %}
 </table>
