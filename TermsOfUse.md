@@ -13,21 +13,16 @@ Each entry in the database will list a data provider, an extract from the terms 
     <thead>
     <tr>
       {% for cell in row %}
-      {% if forloop.last %}
-        {% continue %}
-      {% else %}
+        {% if forloop.last %}
+          {% continue %}
+        {% else %}
         <th>{{ cell[0] }}</th>
-      {% endif %}
+        {% endif %}
       {% endfor %}
     </tr>
     </thead>
     {% endif %}
-{% comment %}
-    <!-- See https://liquidjs.com/tags/tablerow.html -->
-    {% tablerow cell in row %}
-      {{ cell[1] }}
-    {% endtablerow %}
-{% endcomment %}
+
   <!-- manually constructing table -->
   <!-- Data provider,Terms of Use,Source URL,Distributable,Further info,Contributed,Lastdate -->
   <tr>
@@ -39,6 +34,7 @@ Each entry in the database will list a data provider, an extract from the terms 
     <td> <a href="information/{{ row["Further info"] }}.html" alt="Link to additional information">Yes</a></td>
     {% else %}
     <td></td>
+    {% endif %}
     <td class="contributor">{{ row["Contributed"] }}<br/>{{ row["Lastdate"] }}</td>
   </tr>
   {% endfor %}
