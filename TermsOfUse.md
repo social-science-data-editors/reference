@@ -19,10 +19,21 @@ Each entry in the database will list a data provider, an extract from the terms 
     </thead>
     {% endif %}
 {% comment %}
+    <!-- See https://liquidjs.com/tags/tablerow.html -->
     {% tablerow cell in row %}
       {{ cell[1] }}
     {% endtablerow %}
 {% endcomment %}
+  <!-- manually constructing table -->
+  <!-- Data provider,Terms of Use,Source URL,Distributable,Further info,Contributed,Lastdate -->
+  <tr>
+    <td> {{ row[1] }} </td>
+    <td> {{ row[2] }} </td>
+    <td> <a href="{{ row[3] }}" alt="Link to Terms of Use">{{ row[3] }}</a></td>
+    <td> {{ row[4] }} </td>
+    <td> {{ row[5] }} </td>
+    <td class="contributor">{{ row[6] }}<br/>{{ row[7] }}</td>
+  </tr>
   {% endfor %}
 </table>
 
