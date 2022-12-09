@@ -47,3 +47,4 @@ defaults:
 collections:
   information:
     output: true
+    layout: default

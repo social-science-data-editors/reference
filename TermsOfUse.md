@@ -35,7 +35,10 @@ Each entry in the database will list a data provider, an extract from the terms 
     <td> {{ row["Terms of Use"] }} </td>
     <td> <a href="{{ row["Source URL"] }}" alt="Link to Terms of Use">{{ row["Source URL"] }}</a></td>
     <td> {{ row["Distributable"] }} </td>
-    <td> {{ row["Further info"] }} </td>
+    {% if row["Further info"] %}
+    <td> <a href="information/{{ row["Further info"] }}.html" alt="Link to additional information">Yes</a></td>
+    {% else %}
+    <td></td>
     <td class="contributor">{{ row["Contributed"] }}<br/>{{ row["Lastdate"] }}</td>
   </tr>
   {% endfor %}
