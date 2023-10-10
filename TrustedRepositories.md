@@ -3,7 +3,7 @@ title: Additional Trusted Repositories
 layout: withtable
 ---
 
-This list tabulates  repositories that are not have been certified by  [CoreTrustSeal](https://www.coretrustseal.org/), nor appear (at the time of posting here) on other lists of research data repositories ([Nature](https://www.nature.com/sdata/policies/repositories), [F1000Research],(https://f1000research.com/for-authors/data-guidelines#hosting),  [PLOS](https://journals.plos.org/plosone/s/data-availability)), but have been 
+This list tabulates  repositories that are not have been certified by  [CoreTrustSeal](https://www.coretrustseal.org/), nor appear (at the time of posting here) on other lists of research data repositories ([Nature](https://www.nature.com/sdata/policies/repositories), [F1000Research](https://f1000research.com/for-authors/data-guidelines#hosting),  [PLOS](https://journals.plos.org/plosone/s/data-availability)), but have been 
 found to be acceptable for the purpose of archiving social and economic data by data editors.
 
 In order to appear on this list, the repositories must, at the minimum, have an accessible preservation policy. Ideally, they are (correctly) listed on [re3data.org](https://www.re3data.org/), 
@@ -12,7 +12,7 @@ In order to appear on this list, the repositories must, at the minimum, have an 
 
 
 <table class="display">
-  {% for row in site.data.termsofuse %}
+  {% for row in site.data.trusted-repositories %}
     {% if forloop.first %}
     <thead>
     <tr>
@@ -44,7 +44,7 @@ In order to appear on this list, the repositories must, at the minimum, have an 
     {% else %}
     <td></td>
     {% endif %}
-    <td class="Recommender">{{ row["Recommender"] }} }}</td>
+    <td class="Recommender">{{ row["Recommender"] }}</td>
   </tr>
   {% endfor %}
 </table>
