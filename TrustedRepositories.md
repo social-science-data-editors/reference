@@ -18,6 +18,7 @@ In order to appear on this list, the repositories must, at the minimum, have an 
     <tr>
       {% for cell in row %}
         {% if forloop.last %}
+        <th>{{ cell[0] }}</th>
           {% continue %}
         {% else %}
         <th>{{ cell[0] }}</th>
