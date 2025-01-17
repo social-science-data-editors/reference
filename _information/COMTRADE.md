@@ -6,8 +6,7 @@ As provided by Nouri Najjar (Ivey Business School, Western University, Canada), 
 
 ## Who?
 
-| Email to: | UN Subscriptions Department | subscriptions@un.org |
-| --- | --- | --- |
+ Email to:  UN Subscriptions Department  subscriptions@un.org 
 
 ## Why?
 
