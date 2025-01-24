@@ -29,22 +29,14 @@ In order to appear on this list, the repositories must, at the minimum, have an 
     {% endif %}
 
   <!-- manually constructing table -->
-  <!-- Name,URL,Openness,Assigns DOI,Preservation policy URL,re3data entry,Recommender -->
+  <!-- Name,URL,Openness,Preservation policy URL,Assigns DOI,re3data entry,Recommender -->
   <tr>
     <td> {{ row["Name"] }} </td>
     <td> <a href="{{ row["URL"] }}" alt="Link to repository">{{ row["URL"] }}</a></td>
     <td> {{ row["Openness"] }} </td>
-    <td> {{ row["Preservation policy URL"] }} </td>
-    {% if row["Assigns DOI"] %}
-    <td> <a href="{{ row["Assigns DOI"] }}" alt="Link to preservation policy">{{ row["Assigns DOI"] }}</a></td>
-    {% else %}
-    <td></td>
-    {% endif %}
-    {% if row["Preservation policy URL"] %}
-    <td> <a href="{{ row["re3data entry"] }}" alt="Link to re3data entry">{{ row["re3data entry"] }}</a></td>
-    {% else %}
-    <td></td>
-    {% endif %}
+    <td> <a href="{{ row["Preservation policy URL"] }}" alt="Link to preservation policy">{{ row["Preservation policy URL"] }} </td>
+    <td> {{ row["Assigns DOI"] }}</td>
+    <td> {{ row["re3data entry"] }}</td>
     <td class="Recommender">{{ row["Recommender"] }}</td>
   </tr>
   {% endfor %}
