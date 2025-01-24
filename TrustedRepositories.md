@@ -34,17 +34,9 @@ In order to appear on this list, the repositories must, at the minimum, have an 
     <td> {{ row["Name"] }} </td>
     <td> <a href="{{ row["URL"] }}" alt="Link to repository">{{ row["URL"] }}</a></td>
     <td> {{ row["Openness"] }} </td>
-    <td> {{ row["Assigns DOI"] }} </td>
-    {% if row["Preservation policy URL"] %}
-    <td> <a href="{{ row["Preservation policy URL"] }}" alt="Link to preservation policy">{{ row["Preservation policy URL"] }}</a></td>
-    {% else %}
-    <td></td>
-    {% endif %}
-    {% if row["Preservation policy URL"] %}
-    <td> <a href="{{ row["re3data entry"] }}" alt="Link to re3data entry">{{ row["re3data entry"] }}</a></td>
-    {% else %}
-    <td></td>
-    {% endif %}
+    <td> <a href="{{ row["Preservation policy URL"] }}" alt="Link to preservation policy">{{ row["Preservation policy URL"] }} </td>
+    <td> {{ row["Assigns DOI"] }}</td>
+    <td> {{ row["re3data entry"] }}</td>
     <td class="Recommender">{{ row["Recommender"] }}</td>
   </tr>
   {% endfor %}
