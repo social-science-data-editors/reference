@@ -12,22 +12,22 @@ Each entry in the database will list a data provider, an extract from the terms 
     {% if forloop.first %}
     <thead>
     <tr>
-      {% for cell in row %}
-        {% if forloop.last %}
-          {% continue %}
-        {% else %}
-        <th>{{ cell[0] }}</th>
-        {% endif %}
-      {% endfor %}
+      <th> Data provider" </th>
+      <th> Terms of Use" </th>
+      <th>Source URL</th>
+      <th>  Distributable </th>
+      <th> Further info</th>
+      <th> Contributed by</th>
+  </tr>
     </tr>
     </thead>
     {% endif %}
   <!-- Only display rows that are have an empty "obsolete" field -->
-  {% if row["Obsolete"] %}
-    {% continue %}
-  {% endif %}
   <!-- manually constructing table -->
   <!-- Data provider,Terms of Use,Source URL,Distributable,Further info,Contributed,Lastdate -->
+  {% if row["Obsolete"] %}
+    <!-- Data for {{ row["Data provider"] }} ({{ row["Lastdate"] }}) was obsoleted on {{ row["Obsolete"] }} -->
+  {% else %}
   <tr>
     <td> {{ row["Data provider"] }} </td>
     <td> {{ row["Terms of Use"] }} </td>
@@ -40,6 +40,7 @@ Each entry in the database will list a data provider, an extract from the terms 
     {% endif %}
     <td class="contributor">{{ row["Contributed"] }}<br/>{{ row["Lastdate"] }}</td>
   </tr>
+  {% endif %}
   {% endfor %}
 </table>
 
