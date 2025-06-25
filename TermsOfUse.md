@@ -18,7 +18,6 @@ Each entry in the database will list a data provider, an extract from the terms 
       <th>  Distributable </th>
       <th> Further info</th>
       <th> Contributed by</th>
-  </tr>
     </tr>
     </thead>
     {% endif %}
