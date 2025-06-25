@@ -22,7 +22,10 @@ Each entry in the database will list a data provider, an extract from the terms 
     </tr>
     </thead>
     {% endif %}
-
+  <!-- Only display rows that are have an empty "obsolete" field -->
+  {% if row["Obsolete"] %}
+    {% continue %}
+  {% endif %}
   <!-- manually constructing table -->
   <!-- Data provider,Terms of Use,Source URL,Distributable,Further info,Contributed,Lastdate -->
   <tr>
