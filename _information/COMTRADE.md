@@ -2,7 +2,7 @@
 title: COMTRADE data
 ---
 
-As provided by Nouri Najjar (Ivey Business School, Western University, Canada), the following template correspondence may be useful:
+As provided by Nouri Najjar (Ivey Business School, Western University, Canada), the following template correspondence may be useful: 
 
 ## Who?
 
