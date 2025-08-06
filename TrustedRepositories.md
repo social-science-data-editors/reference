@@ -6,7 +6,7 @@ layout: withtable
 This list tabulates  repositories that are not have been certified by  [CoreTrustSeal](https://www.coretrustseal.org/), nor appear (at the time of posting here) on other lists of research data repositories ([Nature](https://www.nature.com/sdata/policies/repositories), [F1000Research](https://f1000research.com/for-authors/data-guidelines#hosting),  [PLOS](https://journals.plos.org/plosone/s/data-availability)), but have been 
 found to be acceptable for the purpose of archiving social and economic data by data editors.
 
-In order to appear on this list, the repositories must, at the minimum, have an accessible preservation policy. Ideally, they are (correctly) listed on [re3data.org](https://www.re3data.org/), 
+In order to appear on this list, the repositories must, at the minimum, have an accessible preservation policy. Ideally, they are (correctly) listed on [re3data.org](https://www.re3data.org/), Inclusion on the list does NOT imply that any single deposit in these repositories comply with any journal's policies, only that they are preserved in a reasonably long-term fashion, with clear access rules. Some of these repositories may only accept submission from certain researchers - this is noted in the table below. 
 
 > Search the database for any keyword in any field.
 
