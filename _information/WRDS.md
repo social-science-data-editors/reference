@@ -1,3 +1,7 @@
+---
+title: Wharton Research Data Services (WRDS)
+---
+
 WRDS does allow for sharing of data with data editors for "audit" purposes. Their guidelines are at <https://wrds-www.wharton.upenn.edu/pages/support/support-articles/coauthor-publishing/navigating-co-authorship-across-institutions-a-guide-to-data-sharing-and-compliance/> (login required for that page!). An excerpt (as of 2025-11-11):
 
 
