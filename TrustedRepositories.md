@@ -1,5 +1,6 @@
 ---
 title: Additional Trusted Repositories
+nav_title: Trusted Repositories
 layout: withtable
 ---
 

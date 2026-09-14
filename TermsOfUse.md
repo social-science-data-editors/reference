@@ -1,5 +1,6 @@
 ---
 title: Various terms of use
+nav_title: Terms of Use
 layout: withtable
 ---
 Each entry in the database will list a data provider, an extract from the terms of use, and the source URL for the terms of use. There is an indication on whether extracts from the data provider can be redistributed by academics as part of replication packages (an important caveat!), and whether data from the data provider can be shared privately (not for publication) with data editors and other members of the journal's editorial time for "audit" purposes. When available, there may be separate page with further details.

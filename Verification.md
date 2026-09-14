@@ -1,5 +1,6 @@
 ---
 title: Verification when data are not publishable
+nav_title: Verification
 layout: withtable
 ---
 
