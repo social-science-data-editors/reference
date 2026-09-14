@@ -12,8 +12,8 @@ Each entry in the database will list a data provider, an extract from the terms 
     {% if forloop.first %}
     <thead>
     <tr>
-      <th> Data provider" </th>
-      <th> Terms of Use" </th>
+      <th> Data provider </th>
+      <th> Terms of Use </th>
       <th>Source URL</th>
       <th>  Distributable </th>
       <th> Shareable with journal? </th>
