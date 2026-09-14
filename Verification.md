@@ -65,6 +65,30 @@ The below database reports on successful verifications known to data editors, an
 
 ## Definitions
 
+### Third-party certification
+
+An independent third-party, not affiliated with either researcher or institution holding the data, conducts the research.
+
+### Institution
+
+The institution holding the data conducts the verification. When the researcher is affiliated with the institution (staff), the verification will be considered *internal*, or possibly *arms-length*. When the researcher is not affilicated with the institution (example: research data centers with external researchers) the verification will be considered *independent*.
+
+### Arms-length replicator
+
+An *arms-length* replicator may be a research assistant employed by the researcher, but not previously involved in the research. Arms-length replicators are expected to follow the same protocols and standards as independent replicators, ensuring objectivity and minimizing potential biases.
+
+### Independent replicator
+
+An *independent* replicator is not affiliated with the researcher, and is normally sent or mandated by the journal's data editor to conduct the research. 
+
+### Approval
+
+In certain cases, the researcher may need to provide approval for others to access or use their research project. In general, journals require researchers to assist journals in this process, but it may be more constraining for verifications conducted after publication. 
+
+### Initiator
+
+The *initiator* is the person or entity who has to trigger the process. In some cases, the journal cannot, on its own, trigger the verification. In others, in particular with **independent** or **third-party** replicators, approval may not be needed by the researcher. Almost always, approval by the entity holding the data will be required, thus, that is not separately broken out in the table.
+
 ## Downloading
 
 To download the entire database in CSV format, [click here](https://raw.githubusercontent.com/social-science-data-editors/reference/main/_data/verifications.csv).
